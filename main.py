@@ -10,6 +10,11 @@ surface = pygame.display.set_mode(screen_size, SCALED)
 clock = pygame.time.Clock()
 myfont = pygame.font.SysFont("Arial", 64)
 
+#MUSIC
+
+bg_music = pygame.mixer.Sound('bg_music.mp3')
+
+#MUSIC
 #BUTTONS IMAGES
 #UNCLICKED
 dfb = 'buttons/' #directory for buttons
@@ -73,6 +78,7 @@ radius = 50
 rx, ry = 358, 475
 mbd = False
 
+bg_music.play()
 #Game loop
 while True:    
     mx,my = pygame.mouse.get_pos()
